@@ -1,0 +1,28 @@
+html, body {
+height: 100%;
+margin: 0;
+}
+
+.circular {
+	margin: 0 auto;
+	width: 160px;
+	height: 160px;
+	border-radius: 80px;
+	-webkit-border-radius: 80px;
+	-moz-border-radius: 80px;
+	background: url(http://www.gravatar.com/avatar/9b283a116db0be014bb30ae38b05bafb?s=160) no-repeat;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.circular img {
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+div#sidebar {
+	/*margin-top: 20px;*/
+	text-align:center;
+	height:100%;
+}
