@@ -1,17 +1,100 @@
-.circular {
+body{
+	margin-top: 20px;
+	background-color: #f7f5fa;
+}
+.avatar {
+	display:block;
 	margin: 0 auto;
-	width: 160px;
-	height: 160px;
-	border-radius: 80px;
-	-webkit-border-radius: 80px;
-	-moz-border-radius: 80px;
-	background: url(http://www.gravatar.com/avatar/9b283a116db0be014bb30ae38b05bafb?s=160) no-repeat;
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	background: url(http://www.gravatar.com/avatar/9b283a116db0be014bb30ae38b05bafb?s=200);
+	background-size: cover;
+	border: 3px solid #049cdb;
 	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
-.circular img {
+.avatar img {
+	border-radius: 100%;
+	width: 100%;
+	height: auto;
 	opacity: 0;
 	filter: alpha(opacity=0);
+}
+
+.emph {
+	color:#049cdb
+}
+
+hr {
+	border: none;
+	border-bottom: 1px solid #aaa;
+	margin: 2em 0;
+}
+
+.divider {
+	border: none;
+	border-bottom: 1px solid #049cdb;
+	margin: 2em 0;
+}
+
+.social {
+	text-decoration: none;
+	color: #049cdb;
+}
+
+/************
+Sidebar stuff
+*************/
+#profile {
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.social {
+	padding: 5px;
+}
+
+#sidebar ul.nav > li > a:hover {
+	border-left: 1px solid #049cdb;
+}
+
+#sidebar ul.nav > .active > a,
+#sidebar ul.nav > .active:hover > a,
+#sidebar ul.nav > .active:focus > a {
+	font-weight: bold;
+	border-left: 3px solid #049cdb;
+}
+
+#sidebar ul.nav > li > ul.nav {
+	display: none;
+}
+
+#sidebar ul.nav > li > ul.nav > li > a {
+	padding-left: 30px;
+	font-size: 90%;
+}
+
+/*Disable affixed*/
+#sidebar.affix {
+	position: static;
+}
+
+
+@media screen and (min-width: 992px) {
+	/*Expand subnavs on large enough screens*/
+	#sidebar ul.nav > li.active > ul {
+		display: block;
+	}
+
+	/*Enable affixed*/
+  	#sidebar.affix {
+  		width: 285px;
+		position: fixed;
+		top: 40px;
+	}
 }
