@@ -14,7 +14,7 @@
     	<link rel="stylesheet" href="css/font-awesome.min.css">
     	<link rel="stylesheet" href="css/custom.css">
     </head>
-    <body data-spy="scroll" data-target="#sidebar">
+    <body data-spy="scroll" data-target="#sidebar" data-offset="30">
     	<div class="container">
     		<div class="col-md-3">
 		    	<div id="sidebar" class="affix">
@@ -26,11 +26,12 @@
 			    		<p class="text-muted">Software Engineering Undergrad at the University of Guelph. I like to make things with my keyboard.</p>
 			    		<a href="http://github.com/jhorvat" class="social"><i class="fa fa-github fa-3x"></i></a>
 			    		<a href="http://twitter.com/j_horvat" class="social"><i class="fa fa-twitter fa-3x"></i></a>
+			    		<a href="mailto://julian.m.horvat@gmail.com" class="social"><i class="fa fa-envelope fa-3x"></i></a>
 		    		</div>
 		    		
 		    		<div class="row panel panel-default" id="navs">
 			    		<ul class="nav panel-body">
-			    			<li class="active">
+			    			<li>
 			    				<a href="#about">About me</a>
 			    				<ul class="nav">
 			    					<li><a href="#about-about-this-site">About this Site</a></li>
@@ -38,9 +39,28 @@
 			    				</ul>
 			    			</li>
 			    			<li>
-			    				<a href="#Resume">Resume</a>
+			    				<a href="#resume">Resume</a>
 			    				<ul class="nav">
-			    					<li><a href="#resume-experience">Experience</a></li>
+			    					<li>
+			    						<a href="#resume-experience">Experience</a>
+			    						<ul class="nav">
+				    						<li><a href="#resume-experience-sap">SAP</a></li>
+				    						<li><a href="#resume-experience-socis">SOCIS</a></li>
+				    						<li><a href="#resume-experience-aml">AML</a></li>
+				    						<li><a href="#resume-experience-ura">University of Waterloo</a></li>
+			    						</ul>
+		    						</li>
+			    					<li>
+			    						<a href="#resume-projects">Projects</a>
+			    						<ul class="nav">
+											<li><a href="#resume-projects-socis">SOCIS.ca</a></li>
+											<li><a href="#resume-projects-personal">jhorvat.github.io</a></li>
+											<li><a href="#resume-projects-sap">SAP Hotels</a></li>
+											<li><a href="#resume-projects-dialogc">Dialogc</a></li>
+			    						</ul>
+		    						</li>
+			    					<li><a href="#resume-education">Education</a></li>
+			    					<li><a href="#resume-technologies">Technologies</a></li>
 			    				</ul>
 			    			</li>
 			    			<li>
@@ -53,11 +73,11 @@
 
 	    	<div class="col-md-8 col-md-offset-1" role="main">
 				<div class="container" id="about">
-					<h2><span class="emph">// </span>About Me</h2>
+					<h2><span class="emph"># </span>About Me</h2>
 					<hr class="divider">
 
 					<p class="lead">
-						Hi, my name is Julian Horvat, I'm a young developer in the second half of his undergraduate degree at the University of Guelph.
+						Hi, I'm Julian, a young developer in the second half of his undergraduate degree at the University of Guelph.
 					</p>				
 					<p>
 						I've been using computers my whole life but only discovered programming once I got to highschool, but once I found it I never looked back. My experience is with more traditional languages like C and Java but I've been furiously teaching myself web development technologies in my spare time for the past year. I also love video games and the outdoors!
@@ -77,20 +97,124 @@
 					<p>
 						If you want to get in touch with me you can reach me on my <a href="http://twitter.com/j_horvat">Twitter</a> or send me an email at my email address, <a href="mailto://julian.m.horvat@gmail.com">julian.m.horvat@gmail.com</a>. I'll try my best to answer as fast as possible.
 					</p>
+					<br><br>
 				</div>
 
-				<div class="container" id="Resume">
-					<h2><span class="emph">// </span>Resume</h2>
+				<div class="container" id="resume">
+					<h2><span class="emph"># </span>Resume</h2>
 					<hr class="divider">
-					
 					<h3 id="resume-experience">Experience</h3>
-					<br>
-					<h4><a href="http://sap.com">SAP</a><small> | Product Support Analyst | April 2013 - Present</small></h4>
+
+					<h4 id= "resume-experience-sap"><a href="http://sap.com">SAP</a><small><br>Product Support Analyst | April 2013 - Present</small></h4>
 					<p>
 						I am currently working as part of SAP's support team helping customers with the SQL Anywhere and Advantage Database Server products. We support thousands of people per month with problems ranging from simple questions to show-stopping crashes in production.
 					</p>
+					
 					<hr>
-					<h4><a href="http://rogers.com">AML Communications</a><small> | Sales Associate | Aug. 2011 - Mar. 2013</small></h4>
+					<h4 id="resume-experience-socis"><a href="http://socis.ca">SOCIS</a><small><br>Community Liaison & System Admin | April 2012 - Present</small></h4>
+					<p>
+						For nearly two years now I have been volunteering for the University of Guelph's <a href="http://socs.uoguelph.ca">School of Computer Science</a> student organization. I have held two positions on the executive; my first year I was Community Liaison and I am currently the Systems Administrator.
+						<br><br>
+						<strong>Community Liaison Responsiblities</strong>
+						<ul>
+							<li>Communicating with the SOCIS community at large about executive decisions, and upcoming events</li>
+							<li>Management of the society's social media presence; a Facebook group containing over fifty members and a public Google event calendar</li>
+							<li>Public announcements to first year computer science classes about SOCIS and upcoming events to increase active club membership</li>
+						</ul>
+						<strong>System Administrator Responsibilities</strong>
+						<ul>
+							<li>Bring SOCIS server back online since it went down last year, this includes re-installation of web servers, migration of user accounts, etc</li>
+							<li>Redesign and rebuild the SOCIS website, the finished product is currently live and is linked above</li>
+						</ul>
+					</p>
+
+					<hr>
+					<h4 id="resume-experience-aml"><a href="http://rogers.com">AML Communications</a><small><br>Sales Associate | Aug. 2011 - Mar. 2013</small></h4>
+					<p>
+						I worked as a sales representative for AML Communications, they were a contractor for <a href="http://rogers.com">Rogers Communications</a>, they no longer exist though having recently been purchased by Rogers. My job was to sell customers the variety of telecomm products that we offered as well as basic troubleshooting any problems that the customers had with these products.
+						<br><br>
+						<strong>Responsiblities</strong>
+						<ul>
+							<li>Required to learn up to date knowledge of current phone features, new contract pricing, in-market plans, and current promotions</li>
+							<li>Meeting or exceeding minimum monthly sales targets</li>
+							<li>Resolution of customer issues with their phones, plans, Rogers, etc</li>
+							<li>Explanation of contractual terms to customers signing new contracts with Rogers</li>
+						</ul>
+					</p>
+
+					<hr>
+					<h4 id="resume-experience-ura"><a href="http://uwaterloo.ca/">University of Waterloo</a><small><br>Undergraduate Research Assistant | October 2010 - June 2011</small></h4>
+					<p>
+						During my final year of high school I was lucky enough to get a internship with <a href="https://ece.uwaterloo.ca/~drayside/">Dr. Derek Rayside</a> of the University of Waterloo. The goal of the internship was to study some security vulnerabilities in large open-source Java applications like <a href="http://ant.apache.org/">Ant</a>. The initial analysis was done using a program that identified certain patterns in the source code, my job was to go investigate each problem that the program identified. We were specificly looking for things such as exposed private variables, singletons that could be spawned multiple times, etc.
+						<br><br>
+						<strong>Responsiblities</strong>
+						<ul>
+							<li>Verification of machine analysis on open-source Java applications related to privilege based security holes</li>
+							<li>Creation and maintenance of a MySQL database, remote Subversion repository, and an Apache web server that facilitated the research</li>
+							<li>Source code analysis of individual problem flags to determine the source of the security hole</li>
+						</ul>
+					</p>
+
+					<hr>
+					<h3 id="resume-projects">Notable Projects</h3>
+
+					<h4 id="resume-projects-socis"><a href="http://socis.ca">SOCIS.ca</a><small><br>2013</small></h4>
+					<p>
+						This was some volunteer work I recently did for my student organization. About a year ago the SOCIS server died and with it our website. We run off of funds from the <a href="http://socs.uoguelph.ca">School of Computer Science</a> so we only just got a server again. My goal was to build a fresh, new site for the organization. Since it needed to be up fast, and basically works as a blog for the org I quickly configured <a href="http://octopress.org">Octopress</a> and used <a href="http://coog.ie">Steven Coogie's</a> amazing <a href="https://github.com/coogie/oscailte/">oscailte</a> theme. This let me get the site up and running within a couple days. Steven's work also inspired my design for this site.
+					</p>
+
+					<hr>
+					<h4 id="resume-projects-personal"><a href="http://jhorvat.github.io">jhorvat.github.io</a><small><br>2013</small></h4>
+					<p>
+						This site counts as a project! It is designed and created by myself using <a href="http://getbootstrap.com/">Twitter's Bootstrap</a> and <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>. I'm not really into blogging so while you might find a post every now and then under that blog heading the main goal of this site was to be a front page for myself. The design went through multiple iterations before becoming what it is today. My biggest inspirations for the design would be <a href="http://coog.ie">Steven Coogie's</a> <a href="https://github.com/coogie/oscailte/">oscailte</a> theme and <a href="http://medium.com">Medium</a>.
+					</p>
+
+					<hr>
+					<h4 id="resume-projects-sap"><a href="https://github.com/jhorvat/SAP-Hotels">SAP Hotels</a><small><br>2013</small></h4>
+					<p>
+						SAP Hotels was part of my summer internship at SAP, as support interns one of our jobs aside from handling cases is to design, and build a proof of concept application using the technologies we support. Our idea for the project was to make a customer-facing reservation system for a hotel chain. Each of us had a task; database administrator, web application and mobile application. I decided that I wanted to learn how to write an Android app, so I did. The application uses UltraLiteJ and MobiLink to sync with a consolidated database and allowed customers to book rooms on their mobile devices. The app was built with Android 4.0+ and SQL Anywhere 16.
+					</p>
+
+					<hr>
+					<h4 id="resume-projects-dialogc">Dialogc <small><br>2013</small></h4>
+					<p>
+						Dialogc was the assignment I wrote for <a href="http://www.uoguelph.ca/registrar/calendars/undergraduate/current/c12/c12cis.shtml#CIS2750">CIS 2750</a>. I have not had a chance to post the code on Github yet. The assignment was split into four parts each due over the course of the semester. The finished product was this: 
+						<ul>
+							<li>
+								2 config file parsers in C; one written by hand and one created using <a href="http://flex.sourceforge.net/">flex</a> and <a href="http://dinosaur.compilertools.net/yacc/">yacc</a>. The goal of this parsing was to generate a GUI form written in <a href="http://en.wikipedia.org/wiki/Swing_(Java)">Swing</a>. The hand written parser would feed information through the <a href="http://en.wikipedia.org/wiki/Java_Native_Interface">JNI</a> into a Java program which would generate the forms, the flex/yacc implentation was a command line application that generated the same form.
+							</li> 
+							<li>
+								An IDE written in Swing for the config files complete with project directories and output directories for the generated forms. The IDE was capable of using either config file parser through a setting.
+							</li>
+							<li>
+								The generated forms would connect to a MySQL database and manipulate a table in said database.
+							</li>
+							<li>
+								A self-extracting install script written in Bash that would deploy the program and configure any settings in a dotfile in the user's home directory.
+							</li>
+						</ul>
+					</p>
+
+					<hr>
+					<h3 id="resume-education">Education</h3>
+					<p>
+						I am currently in the second half of an undergraduate Honours degree in Software Engineering at the <a href="http://uoguelph.ca">University of Guelph</a>, I expect to graduate in early 2016. I also teach myself a fair amount, one of my biggest goals is to learn web development, something not offered at the University. So far I think I've been pretty successful in teaching myself HTML, CSS, Javascript and Go.
+					</p>
+
+					<hr>
+					<h3 id="resume-technologies">Technologies</h3>
+					<p>
+						I have experience in a number of languages and technologies, among them:
+						<ul>
+							<li>C</li>
+							<li>Java</li>
+							<li><a href="http://golang.org">Go</a>, <a href="http://robfig.github.io/revel">Revel</a></li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>Javascript, <a href="http://jquery.com">jQuery</a></li>
+							<li><a href="http://getbootstrap.com/">Bootstrap</a>, <a href="http://foundation.zurb.com/">Foundation</a></li>
+						</ul>
+					</p>
 				</div>
 			</div>
     	</div>

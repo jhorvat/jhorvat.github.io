@@ -1,12 +1,13 @@
 body{
 	margin: 30px;
+	margin-bottom: 50px;
 	background-color: #f7f5fa;
 }
 
 hr {
 	border: none;
 	border-bottom: 1px solid #aaa;
-	margin: 2em 0;
+	margin: 2em;
 }
 
 .avatar {
@@ -81,6 +82,11 @@ Sidebar stuff
 
 #sidebar ul.nav > li > ul.nav > li > a {
 	padding-left: 30px;
+	font-size: 90%;
+}
+
+#sidebar ul.nav > li > ul.nav > li > ul.nav > li > a {
+	padding-left: 60px;
 	font-size: 90%;
 }
 
