@@ -109,3 +109,9 @@ Sidebar stuff
 		top: 40px;
 	}
 }
+
+@media screen and (max-width: 992px) {
+	.container {
+		
+	}
+}
