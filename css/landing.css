@@ -1,0 +1,16 @@
+.container {
+	padding-top: 10%;
+}
+
+.avatar {
+	width: 175px;
+	height: 175px;
+}
+
+#navs {
+	margin-top: 10%;
+}
+
+#navs ul.nav > li > a:hover {
+	border-left: 1px solid #049cdb;
+}
