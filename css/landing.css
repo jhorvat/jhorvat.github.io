@@ -2,27 +2,20 @@
     padding-top: 10%;
 }
 
-.avatar {
-	width: 175px;
-	height: 175px;
-}
 
 @media screen and (min-width: 992px) {
+	.avatar {
+		width: 175px;
+		height: 175px;
+	}
+
 	#navs {
 		margin-top: 10%;
 	}
 }
 
 @media screen and (max-width: 768px) {
-	.col-xs-offset-2 {
-		margin-left: 16.666666666666664%;
-	}
-
-	#profile {
-		font-size: 90%;
-	}	
-
-	#profile .social {
-		font-size: 90%;
+	h1 {
+		font-size: 25px;
 	}
 }
