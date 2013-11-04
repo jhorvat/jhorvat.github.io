@@ -65,29 +65,11 @@ Sidebar stuff
 	padding: 5px;
 }
 
-#sidebar ul.nav > li > a:hover {
-	border-left: 1px solid #049cdb;
-}
-
-#sidebar ul.nav > .active > a,
-#sidebar ul.nav > .active:hover > a,
-#sidebar ul.nav > .active:focus > a {
-	font-weight: bold;
-	border-left: 3px solid #049cdb;
-}
-
-#sidebar ul.nav > li > ul.nav {
-	display: none;
-}
-
-#sidebar ul.nav > li > ul.nav > li > a {
-	padding-left: 30px;
-	font-size: 90%;
-}
-
-#sidebar ul.nav > li > ul.nav > li > ul.nav > li > a {
-	padding-left: 60px;
-	font-size: 90%;
+#sidebar ul.nav > li.active > a,
+#sidebar ul.nav > li.active:hover > a,
+#sidebar ul.nav > li.active:focus > a {
+	background-color: #049cdb;
+	border-left: 0px solid #049cdb;
 }
 
 /*Disable affixed*/
@@ -97,11 +79,6 @@ Sidebar stuff
 
 
 @media screen and (min-width: 992px) {
-	/*Expand subnavs on large enough screens*/
-	#sidebar ul.nav > li.active > ul {
-		display: block;
-	}
-
 	/*Enable affixed*/
   	#sidebar.affix {
   		width: 285px;
