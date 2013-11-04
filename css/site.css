@@ -110,8 +110,16 @@ Sidebar stuff
 	}
 }
 
-@media screen and (max-width: 992px) {
-	.container {
-		
+@media screen and (max-width: 768px) {
+	.col-xs-offset-2 {
+		margin-left: 16.666666666666664%;
+	}
+
+	#profile {
+		font-size: 90%;
+	}	
+
+	#profile .social {
+		font-size: 90%;
 	}
 }

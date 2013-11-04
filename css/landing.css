@@ -1,16 +1,22 @@
-.container {
-	padding-top: 10%;
-}
-
 .avatar {
 	width: 175px;
 	height: 175px;
 }
 
-#navs {
-	margin-top: 10%;
-}
-
 #navs ul.nav > li > a:hover {
 	border-left: 1px solid #049cdb;
+}
+
+@media screen and (max-width: 768px) {
+	.col-xs-offset-2 {
+		margin-left: 16.666666666666664%;
+	}
+
+	#profile {
+		font-size: 90%;
+	}	
+
+	#profile .social {
+		font-size: 90%;
+	}
 }
