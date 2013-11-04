@@ -65,11 +65,8 @@ Sidebar stuff
 	padding: 5px;
 }
 
-#sidebar ul.nav > li.active > a,
-#sidebar ul.nav > li.active:hover > a,
-#sidebar ul.nav > li.active:focus > a {
+#sidebar ul.nav > li.active > a {
 	background-color: #049cdb;
-	border-left: 0px solid #049cdb;
 }
 
 /*Disable affixed*/

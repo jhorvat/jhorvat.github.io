@@ -1,10 +1,16 @@
+.container {
+    padding-top: 10%;
+}
+
 .avatar {
 	width: 175px;
 	height: 175px;
 }
 
-#navs ul.nav > li > a:hover {
-	border-left: 1px solid #049cdb;
+@media screen and (min-width: 992px) {
+	#navs {
+		margin-top: 10%;
+	}
 }
 
 @media screen and (max-width: 768px) {
