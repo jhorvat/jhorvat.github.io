@@ -1,7 +1,7 @@
 body{
+  font-family: 'Exo 2', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	margin: 30px;
 	margin-bottom: 50px;
-	background-color: #f7f5fa;
 }
 
 hr {
@@ -47,7 +47,6 @@ hr {
 
 .social {
 	text-decoration: none;
-	color: #049cdb;
 }
 
 /************
@@ -62,15 +61,10 @@ Sidebar stuff
 	padding: 5px;
 }
 
-#sidebar ul.nav > li.active > a {
-	background-color: #049cdb;
-}
-
 /*Disable affixed*/
 #sidebar.affix {
 	position: static;
 }
-
 
 @media screen and (min-width: 992px) {
 	/*Enable affixed*/
@@ -99,3 +93,4 @@ Sidebar stuff
 		font-size: 90%;
 	}
 }
+
