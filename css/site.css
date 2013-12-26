@@ -20,10 +20,7 @@ hr {
 	-moz-border-radius: 50%;
 	background: url(http://www.gravatar.com/avatar/9b283a116db0be014bb30ae38b05bafb?s=200);
 	background-size: cover;
-	border: 3px solid #049cdb;
-	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	border: 4px solid #049cdb;
 }
 
 .avatar img {
@@ -77,11 +74,11 @@ Sidebar stuff
 
 @media screen and (min-width: 992px) {
 	/*Enable affixed*/
-  	#sidebar.affix {
-  		width: 285px;
+  #sidebar.affix {
+    width: 285px;
 		position: fixed;
 		top: 40px;
-	}
+  }
 }
 
 @media screen and (max-width: 768px) {
