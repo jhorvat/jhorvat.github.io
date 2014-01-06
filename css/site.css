@@ -9,6 +9,11 @@ hr {
 	margin: 2em;
 }
 
+.right {
+  position: absolute;
+  right: 0.5em;
+}
+
 .avatar {
 	display:block;
 	margin: 0 auto;
