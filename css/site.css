@@ -9,6 +9,13 @@ hr {
 	margin: 2em;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  text-align: center;
+}
+
 .right {
   position: absolute;
   right: 0.5em;
