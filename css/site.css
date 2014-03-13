@@ -3,6 +3,14 @@ body{
 	margin-bottom: 50px;
 }
 
+h1, h2, h3, h4, h5 {
+	font-family: 'Alfa Slab One'
+}
+
+p {
+	font-family: 'Raleway'
+}
+
 hr {
 	border: none;
 	border-bottom: 1px solid #aaa;
@@ -98,7 +106,7 @@ Sidebar stuff
 
 	#profile {
 		font-size: 90%;
-	}	
+	}
 
 	#profile .social {
 		font-size: 90%;
