@@ -14,6 +14,8 @@ $(document).ready(function() {
       $('.panel-cover').css('max-width',currentWidth);
       $('.panel-cover').animate({'max-width': '530px', 'width': '40%'}, 400, swing = 'swing', function() {} );
     }
+    window.location.hash = '#about';
+    this.preventDefault();
   });
 
   $('a#blog-button').click(function() {
@@ -28,6 +30,8 @@ $(document).ready(function() {
       $('.panel-cover').css('max-width',currentWidth);
       $('.panel-cover').animate({'max-width': '530px', 'width': '40%'}, 400, swing = 'swing', function() {} );
     }
+    window.location.hash = '#blog';
+    this.preventDefault();
   });
 
   if (window.location.hash && window.location.hash == "#blog") {
