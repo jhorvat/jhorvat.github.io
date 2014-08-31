@@ -34,6 +34,12 @@ $(document).ready(function() {
     $('.panel-cover').addClass('panel-cover--collapsed');
   }
 
+  if (window.location.hash && window.location.hash == "#about") {
+    $('.main-post-list').hide()
+    $('#about-div').show()
+    $('.panel-cover').addClass('panel-cover--collapsed');
+  }
+
   if (window.location.pathname.substring(0, 5) == "/tag/") {
     $('.panel-cover').addClass('panel-cover--collapsed');
   }
