@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   $('body').removeClass('no-js');
 
-  $('a#about-button').click(function() {
+  $('a#about-button').click(function(e) {
     $('.main-post-list').hide()
     $('#about-div').show()
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) return;
@@ -15,10 +15,10 @@ $(document).ready(function() {
       $('.panel-cover').animate({'max-width': '530px', 'width': '40%'}, 400, swing = 'swing', function() {} );
     }
     window.location.hash = '#about';
-    this.preventDefault();
+    e.preventDefault();
   });
 
-  $('a#blog-button').click(function() {
+  $('a#blog-button').click(function(e) {
     $('.main-post-list').show()
     $('#about-div').hide()
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) return;
@@ -31,7 +31,7 @@ $(document).ready(function() {
       $('.panel-cover').animate({'max-width': '530px', 'width': '40%'}, 400, swing = 'swing', function() {} );
     }
     window.location.hash = '#blog';
-    this.preventDefault();
+    e.preventDefault();
   });
 
   if (window.location.hash && window.location.hash == "#blog") {
