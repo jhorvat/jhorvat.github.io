@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('body').removeClass('no-js');
 
   $('a#about-button').click(function(e) {
-    e.preventDefault();
+    if (window.location.pathname == '/') e.preventDefault();
     window.location.hash = '#about';
     $('.main-post-list').hide()
     $('#about-div').show()
@@ -19,7 +19,7 @@ $(document).ready(function() {
   });
 
   $('a#blog-button').click(function(e) {
-    e.preventDefault();
+    if (window.location.pathname == '/') e.preventDefault();
     window.location.hash = '#blog';
     $('.main-post-list').show()
     $('#about-div').hide()
