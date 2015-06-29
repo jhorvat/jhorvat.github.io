@@ -1,12 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One);
 
-html, body {
+html, body, section {
     height: 100%;
     width: 100%;
 }
 
 body {
-    background: url('https://download.unsplash.com/photo-1429277096327-11ee3b761c93') no-repeat center center fixed;
+    background: url('https://download.unsplash.com/photo-1417436026361-a033044d901f') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -16,10 +16,11 @@ h1 {
 
 h1.name {
     font-size: 18vw;
-    letter-spacing: 2px;
     margin-bottom: 10px;
     color: #EDF5FE;
     opacity: 0.7;
+    line-height: inherit;
+    padding-left: 1vw;
 }
 
 .name small {
@@ -27,15 +28,19 @@ h1.name {
     color: inherit;
     opacity: 0.8;
     display: block;
-    margin-top: 5px;
+    margin-top: -5vw;
+    margin-left: 6vw;
 }
 
 @media (min-width: 450px) {
     h1.name {
+        margin-bottom: 0;
         font-size: 12vw;
     }
 
     .name small {
+        margin-top: 0;
+        margin-left: 0;
         display: inline;
     }
 }
@@ -63,7 +68,7 @@ h2.slogan {
     height: 100%;
     margin-bottom: 0;
     padding-bottom: 0;
-    background-color: rgba(44, 102, 110, 0.5);;
+    background-color: rgba(44, 102, 110, 0.5);
 }
 
 .page-header {
@@ -88,32 +93,42 @@ h2.slogan {
     }
 }
 
-.brands {
+.brands a {
     padding-top: 5px;
     font-size: 7vw;
     color: #EDF5FE;
     opacity: 0.7;
 }
 
+.brands a:hover,
+.brands a:focus,
+.brands a:active {
+    opacity: 1;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+
 @media (min-width: 450px) {
-    .brands {
+    .brands a {
         font-size: 3vw;
     }
 }
 
-.brands i {
-    padding-right: 5px;
-    padding-left: 5px;
+.brands a {
+    padding-right: 7px;
+    padding-left: 7px;
 }
 
-.brands .fa-medium {
+.brands a .fa-medium {
     font-size: 88%;
 }
 
-.brands .fa-linkedin {
+.brands a .fa-linkedin {
     font-size: 96%;
 }
 
-.brands .fa-envelope {
+.brands a .fa-envelope {
     font-size: 91%;
 }
