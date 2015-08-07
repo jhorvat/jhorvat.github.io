@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Sen';
+  src: url('../fonts/Sen-ExtraBold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Sen-ExtraBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Sen-ExtraBold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Sen-ExtraBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Sen-ExtraBold.svg#Sen-ExtraBold') format('svg'); /* Legacy iOS */
+}
+
+html, body {
+    width: 100%;
+    font-family: 'Sen', sans-serif;
+    background-color: #ecf0f1;
+}
+
+section {
+    display: block;
+    max-width: 85vw;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+}
+
+p {
+    font-size: 20px;
+    margin: 10px;
+}
+
+#profile {
+    width: 20vh;
+    height: 20vh;
+    margin: 0 auto 15px auto;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: #666 8px solid;
+}
+
+#profile img {
+    height: 100%;
+    margin: 0 auto;
+    width: auto;
+}
+
+#name {
+    border-top: none;
+    margin-top: 12vh;
+}
+
+#name h1,
+#name h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+    letter-spacing: 4px;
+}
+
+#name h1 {
+    font-size: 80px;
+    letter-spacing: 5px;
+}
+
+#name h2 {
+    margin-top: -10px;
+    font-size: 55px;
+}
+
+#social a {
+    display: inline-block;
+    margin-right: 0.75vw;
+    margin-left: 0.75vw;
+    margin-bottom: 15px;
+    color: #666;
+    text-decoration: none;
+    -webkit-transition: color 250ms ease-in-out;
+	-moz-transition: color 250ms ease-in-out;
+	-o-transition: color 250ms ease-in-out;
+	transition: color 250ms ease-in-out;
+}
+
+#social a:hover,
+#social a:focus,
+#social a:active {
+    color: #e74c3c;
+}
+
+#social h3 {
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
