@@ -7,21 +7,24 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <section id="name">
-            <div id="profile">
+            <div id="profile" class="wow fadeIn" data-wow-delay="1s">
                 <img src="/img/profile.jpg" alt="">
             </div>
-            <h1>Julian</h1>
-            <h2>Horvat</h2>
+            <div class="wow fadeInUp" data-wow-duration="1s">
+                <h1>Julian</h1>
+                <h2>Horvat</h2>
+            </div>
         </section>
-        <section id="main">
+        <section id="main" class="wow fadeIn" data-wow-delay="1.5s">
             <p>Software Engineering Undergrad at the University of Guelph.</p>
             <p>I type on keyboards and sometimes software comes out.</p>
         </section>
-        <section id="social">
+        <section id="social" class="wow fadeIn" data-wow-delay="1.5s">
             <h3>More About Me</h3>
             <a href="http://github.com/jhorvat">Github</a>
             <a href="https://medium.com/@jhorvat">Medium</a>
@@ -30,5 +33,10 @@
             <a href="/resume.pdf">Resume</a>
             <a href="mailto:julian.m.horvat@gmail.com">Email</a>
         </section>
+
+        <script src="js/wow.min.js"/></script>
+        <script>
+            new WOW().init();
+        </script>
     </body>
 </html>
