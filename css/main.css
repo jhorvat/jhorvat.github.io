@@ -8,29 +8,22 @@
 }
 
 html, body {
-    font-family: 'Sen', sans-serif;
     background-color: #ecf0f1;
 }
 
-section {
-    display: block;
-    max-width: 85vw;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    margin-top: 30px;
+h1, h2, h3, p, a {
+    font-family: 'Sen', sans-serif;
     color: #666;
 }
 
-p {
-    font-size: 20px;
-    margin: 10px;
+.header {
+    margin-top: 8vh;
 }
 
-#profile {
+.profile {
     width: 20vh;
-    height: 20vh;
-    margin: 0 auto 15px auto;
+    margin-top: 0;
+    margin-bottom: 15px;
     overflow: hidden;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -40,35 +33,24 @@ p {
     border: #666 8px solid;
 }
 
-#profile img {
-    height: 100%;
-    margin: 0 auto;
-    width: auto;
-}
-
-#name {
+.name {
     border-top: none;
-    margin-top: 12vh;
-}
-
-#name h1,
-#name h2 {
     margin-bottom: 0;
     margin-top: 0;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
+    font-size: 3rem;
 }
 
-#name h1 {
-    font-size: 80px;
-    letter-spacing: 5px;
+.info div {
+    margin-top: 30px;
 }
 
-#name h2 {
-    margin-top: -10px;
-    font-size: 55px;
+.info p {
+    font-size: 20px;
+    margin: 10px;
 }
 
-#social a {
+.info a {
     display: inline-block;
     margin-right: 0.75vw;
     margin-left: 0.75vw;
@@ -81,15 +63,14 @@ p {
 	transition: color 250ms ease-in-out;
 }
 
-#social a:hover,
-#social a:focus,
-#social a:active {
+.info a:hover,
+.info a:focus,
+.info a:active {
     color: #e74c3c;
 }
 
-#social h3 {
-    font-size: 25px;
+.info h3 {
+    font-size: 1.5rem;
     margin-top: 0;
     margin-bottom: 15px;
-    letter-spacing: 2px;
 }
