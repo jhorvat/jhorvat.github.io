@@ -12,36 +12,257 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <div class="row header">
-            <div class="small-11 small-centered columns text-center">
+        <div id="intro" class="hide row">
+            <div class="row">
+                <div class="small-11 small-centered columns text-center">
                     <div class="profile float-center wow fadeIn" data-wow-delay=".75s">
                         <img src="/img/profile.jpg" alt="">
                     </div>
-                <h1 class="name wow fadeIn" data-wow-duration=".75s">Julian Horvat</h1>
+                    <h1 class="name wow fadeIn" data-wow-duration=".75s">Julian Horvat</h1>
+                </div>
+            </div>
+
+            <div class="row column wow fadeIn" data-wow-delay=".75s">
+                <div class="small-11 small-centered columns text-center info">
+                    <div>
+                        <p>Software Engineering Undergrad at the University of Guelph.</p>
+                        <p>I type on keyboards and sometimes software comes out.</p>
+                    </div>
+                    <div>
+                        <h3>More About Me</h3>
+                        <a href="http://github.com/jhorvat">Github</a>
+                        <a href="https://medium.com/@jhorvat">Medium</a>
+                        <a href="http://www.linkedin.com/pub/julian-horvat/86/214/95b">LinkedIn</a>
+                        <a id="resumeLink" href="">Resume</a>
+                        <a href="mailto:julian.m.horvat@gmail.com">Email</a>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="row column wow fadeIn" data-wow-delay=".75s">
-            <div class="small-11 small-centered columns text-center info">
-                <div>
-                    <p>Software Engineering Undergrad at the University of Guelph.</p>
-                    <p>I type on keyboards and sometimes software comes out.</p>
+        <div id="resume" class="row">
+            <div class="large-3 large-offset-1 medium-4 small-12 columns text-center sidebar">
+                <div class="profile float-center">
+                    <img src="/img/profile.jpg" alt="">
                 </div>
-                <div>
-                    <h3>More About Me</h3>
-                    <a href="http://github.com/jhorvat">Github</a>
-                    <a href="https://medium.com/@jhorvat">Medium</a>
-                    <a href="http://www.linkedin.com/pub/julian-horvat/86/214/95b">LinkedIn</a>
-                    <a href="/resume.pdf">Resume</a>
-                    <a href="mailto:julian.m.horvat@gmail.com">Email</a>
+                <h1 class="name">Julian Horvat</h1>
+            </div>
+
+            <div class="large-7 medium-8 small-12 columns end">
+                <div class="row section">
+                    <h4 class="section-header">Projects</h4>
+                    <div class="item">
+                        <div class="row column">
+                            <h5><a href="https://play.google.com/store/apps/details?id=com.d2l.brightspace.student.android">Brightspace Pulse</a></h5>
+                        </div>
+                        <div class="row column">
+                            <ul>
+                                <li>An Android app built to be a mobile companion for students to the Brightspace desktop site</li>
+                                <li>Designed according to Google's Material Design Guidelines and using modern libraries/paradigms such as RxJava and Dagger</li>
+                                <li>Worked as one of three developers on the project, which had a strict scrum methodology to development</li>
+                                <li>Developed many individual features, from underlying data structures and networking calls to custom views such as a fully custom speed dial floating action button</li>
+                                <li>
+                                    More info available on my <a href="https://medium.com/@jhorvat/co-op-at-d2l-7b9308e42ed0#.hgu1sa2kv">Medium post</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row column">
+                            <h5><a href="https://fan.si">Fan.si</a></h5>
+                        </div>
+                        <div class="row column">
+                            <ul>
+                                <li>Worked on both the Google AppEngine based API and the Backbone.js based frontend</li>
+                                <li>By the end of my time there, was the lead developer on the frontend responsible for all features</li>
+                                <li>Features worked on included a music player compatible with both desktop browsers and a Cordova-based mobile app, a live analytics dashboard built with <a href="https://keen.io/">Keen.io</a> and the <a href="https://cloud.google.com/appengine/docs/python/channel/">AppEngine Channels API</a> among many others</li>
+                                <li>
+                                    More info available on my Medium posts <a href="https://medium.com/@jhorvat/full-stack-development-at-fan-si-8601a61ce4f#.7ksrsjmw1">here</a> and <a href="https://medium.com/@jhorvat/full-stack-development-fan-si-episode-ii-5e15fcb5849e#.t5q7rgby1">here</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row section">
+                    <h4 class="section-header">Skills</h4>
+                    <div class="item">
+                        <div class="row column">
+                            <h5>Programming Languages</h5>
+                        </div>
+                        <div class="row">
+                            <div class="small-12 medium-6 columns">
+                                <p class="language">Python</p>
+                                <div class="progress">
+                                    <div class="progress-meter language-progress-meter" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="small-12 medium-6 columns">
+                                <p class="language">Java</p>
+                                <div class="progress">
+                                    <div class="progress-meter language-progress-meter" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="small-12 medium-6 columns">
+                                <p class="language">Javascript</p>
+                                <div class="progress">
+                                    <div class="progress-meter language-progress-meter" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div class="small-12 medium-6 columns">
+                                <p class="language">HTML5</p>
+                                <div class="progress">
+                                    <div class="progress-meter language-progress-meter" style="width: 50%"></div>
+                                </div>
+                            </div>
+                            <div class="small-12 medium-6 end columns">
+                                <p class="language">CSS3</p>
+                                <div class="progress">
+                                    <div class="progress-meter language-progress-meter" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row column">
+                            <h5>Android Development</h5>
+                            <p>RetroFit, RxJava, Dagger, Otto, GSON, OkHTTP</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row column">
+                            <h5>Web Development</h5>
+                            <p>Google AppEngine, Node.js, Backbone.js, jQuery, Flask</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row section">
+                    <h4 class="section-header">Employment</h4>
+                    <div class="item">
+                        <div class="row">
+                            <div class="small-7 columns">
+                                <h5>University of Guelph<br><span class="position">Undergraduate Teaching Assistant</span></h5>
+                            </div>
+                            <div class="small-5 columns text-right">
+                                <h5>Sep 2015 - Present</h5>
+                            </div>
+                        </div>
+                        <div class="row column">
+                            <ul>
+                                <li>TA for Computer Networking (CIS 3210) a course centered around an introduction to networks from a programmer's perspective, including such topics as network protocols and web technologies</li>
+                                <li>The role includes grading of assignments/tests, and holding weekly office hours to help students that have questions about the course content</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="small-7 columns">
+                                <h5>D2L<br><span class="position">Junior Android Developer</span></h5>
+                            </div>
+                            <div class="small-5 columns text-right">
+                                <h5>Apr 2015 - Sep 2015</h5>
+                            </div>
+                        </div>
+                        <div class="row column">
+                            <ul>
+                                <li>Worked on a small team that launched a new product focused on improving mobile user experience for students using the Learning Platform at various institutions around the world</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="small-7 columns">
+                                <h5>Fan.si<br><span class="position">Junior Full-Stack Developer</span></h5>
+                            </div>
+                            <div class="small-5 columns text-right">
+                                <h5>Apr 2014 - Apr 2015</h5>
+                            </div>
+                        </div>
+                        <div class="row column">
+                            <ul>
+                                <li>Second developer on the development team</li>
+                                <li>Responsible for the concept, design and implementation of many features on the site</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="small-7 columns">
+                                <h5>SAP<br><span class="position">Database Support Engineer</span></h5>
+                            </div>
+                            <div class="small-5 columns text-right">
+                                <h5>Apr 2013 - Dec 2013</h5>
+                            </div>
+                        </div>
+                        <div class="row column">
+                            <ul>
+                                <li>Part of a team that supported SQL Anywhere and Advantage Database Server handling problems ranging from simple questions to show-stopping crashes in production</li>
+                                <li>Reproduced bugs and worked with the engineering team to fix them</li>
+                                <li>Wrote Knowledge Base articles when a case had an undocumented resolution for the purpose of deflecting future cases</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row section">
+                    <h4 class="section-header">Volunteering</h4>
+                    <div class="item">
+                        <div class="row">
+                            <div class="small-7 columns">
+                                <h5>CUSEC<br><span class="position">Head Delegate</span></h5>
+                            </div>
+                            <div class="small-5 columns text-right">
+                                <h5>Fall 2014 - Current</h5>
+                            </div>
+                        </div>
+                        <div class="row column">
+                            <ul>
+                                <li>Organized trip to conference for University of Guelph students, including securing funding and transportation planning</li>
+                                <li>Assisted in the organization and execution of the conference</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="small-7 columns">
+                                <h5>SOCIS<br><span class="position">Community Liaison</span></h5>
+                            </div>
+                            <div class="small-5 columns text-right">
+                                <h5>Apr 2012 - Apr 2015</h5>
+                            </div>
+                        </div>
+                        <div class="row column">
+                            <p>SOCIS is a student organization for the University of Guelph's School of Computer Science. The organization runs community building events for Computing students and is the direct connection between the student body and the department.</p>
+                            <ul>
+                                <li>Elected to the executive team three years in a row</li>
+                                <li>Coordinated community events</li>
+                                <li>Kept students informed about the local tech community events</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row section">
+                    <h4 class="section-header">Education</h4>
+                    <div class="item">
+                        <div class="row">
+                            <div class="small-7 columns">
+                                <h5>University of Guelph<br><span class="position">B.Comp Software Engineering</span></h5>
+                            </div>
+                            <div class="small-5 columns text-right">
+                                <h5>Sep 2011 - Apr 2016</h5>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
         <script src="js/vendor/jquery.min.js"></script>
         <script src="js/vendor/what-input.min.js"></script>
-        <script src="js/foundation.min.js"/></script>
-        <script src="js/wow.min.js"/></script>
-        <script src="js/app.js"/></script>
+        <script src="js/foundation.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/ramjet.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>
