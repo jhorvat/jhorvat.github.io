@@ -32,14 +32,24 @@ a:active {
     color: #e74c3c;
 }
 
+@media screen and (max-width: 39.9375em) {
+    #resume .sidebar {
+        margin-bottom: 20px;
+    }
+
+    .profile {
+        margin-top: 0;
+    }
+}
+
 #intro, #resume {
-    margin-top: 8vh;
-    margin-bottom: 8vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .profile {
-    width: 20vh;
-    margin-top: 0;
+    width: 50%;
+    margin-top: 10px;
     margin-bottom: 15px;
     overflow: hidden;
     -webkit-border-radius: 50%;
@@ -67,11 +77,20 @@ a:active {
     margin: 10px;
 }
 
-#intro .info a {
+#intro .info .button {
     display: inline-block;
-    margin-right: 0.75vw;
-    margin-left: 0.75vw;
-    margin-bottom: 15px;
+    vertical-align: middle;
+    padding: 0.85em 1em;
+    margin: 50px 0 1rem 0;
+    font-size: 1rem;
+    background: #666;
+    color: #FFF;
+}
+
+#intro .info .button:hover,
+#intro .info .button:focus,
+#intro .info .button:active {
+    background: #e74c3c;
 }
 
 #intro .info h3 {
@@ -81,7 +100,7 @@ a:active {
 }
 
 #resume .sidebar {
-    border-right: #666 2px solid;
+    width: 100%;
 }
 
 #resume .sidebar .name {
@@ -91,6 +110,7 @@ a:active {
 
 #resume .sidebar .profile-info {
     margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 #resume .sidebar .profile-info p {
@@ -102,21 +122,24 @@ a:active {
     margin-right: 3px;
 }
 
-#resume .sidebar .social {
-    font-size: 1.5rem;
-}
-
 #resume .section {
     margin: auto;
 }
 
+#resume .section:not(:first-child) {
+    margin-top: 20px;
+}
+
 #resume .section h5 {
     font-size: 1.15rem;
-    margin-bottom: 6px;
 }
 
 #resume .section h5 .position {
     color: #888;
+}
+
+#resume .section .item {
+    margin-top: 10px;
 }
 
 #resume .section-header {

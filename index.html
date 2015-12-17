@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <div id="intro" class="row">
+        <div id="intro" class="hide row">
             <div class="row">
                 <div class="small-11 small-centered columns text-center">
                     <div class="profile float-center wow fadeIn" data-wow-delay=".75s">
@@ -25,32 +25,29 @@
 
             <div class="row column wow fadeIn" data-wow-delay=".75s">
                 <div class="small-11 small-centered columns text-center info">
-                    <div>
-                        <p>Software Engineering Undergrad at the University of Guelph.</p>
-                        <p>I type on keyboards and sometimes software comes out.</p>
-                    </div>
-                    <div>
-                        <h3><a class="button" href="" id="resumeLink">More About Me</a></h3>
-                        <button class="button" id="resumeLink" type="button">More About Me</button>
-                    </div>
+                    <p>Software Engineering Undergrad at the University of Guelph.</p>
+                    <p>I type on keyboards and sometimes software comes out.</p>
+                    <a class="button" href="" id="resumeLink">More About Me</a>
                 </div>
             </div>
         </div>
 
-        <div id="resume" class="hide row">
-            <div class="large-3 large-offset-1 medium-4 small-12 columns sidebar">
-                <div class="profile float-center">
-                    <img src="/img/profile.jpg" alt="">
-                </div>
-                <h1 class="name text-center">Julian Horvat</h1>
-                <div class="profile-info">
-                    <p><a href="mailto:julian.m.horvat@gmail.com"><i class="icon-mail"></i>julian.m.horvat@gmail.com</a></p>
-                    <p><a href="http://jhorvat.github.io"><i class="icon-globe"></i>jhorvat.github.io</a></p>
-                    <p><a href="http://github.com/jhorvat"><i class="icon-github"></i>github.com/jhorvat</a></p>
-                    <p><a href="https://medium.com/@jhorvat"><i class="icon-medium"></i>@jhorvat</a></p>
-                    <p><a href="http://www.linkedin.com/pub/julian-horvat/86/214/95b"><i class="icon-linkedin"></i>LinkedIn</a></p>
-                    <p><i class="icon-phone"></i>(519) 722 6062</p>
-                    <p><i class="icon-location"></i>Cambridge, ON</p>
+        <div id="resume" class="row">
+            <div class="large-3 large-offset-1 medium-4 small-12 columns" data-sticky-container>
+                <div class="sidebar sticky" data-sticky>
+                    <div class="profile float-center">
+                        <img src="/img/profile.jpg" alt="">
+                    </div>
+                    <h1 class="name text-center">Julian Horvat</h1>
+                    <div class="profile-info">
+                        <p><a href="mailto:julian.m.horvat@gmail.com"><i class="icon-mail"></i>julian.m.horvat@gmail.com</a></p>
+                        <p><a href="http://jhorvat.github.io"><i class="icon-globe"></i>jhorvat.github.io</a></p>
+                        <p><a href="http://github.com/jhorvat"><i class="icon-github"></i>github.com/jhorvat</a></p>
+                        <p><a href="https://medium.com/@jhorvat"><i class="icon-medium"></i>@jhorvat</a></p>
+                        <p><a href="https://ca.linkedin.com/in/julian-horvat-95b21486"><i class="icon-linkedin"></i>LinkedIn</a></p>
+                        <p><i class="icon-phone"></i>(519) 722 6062</p>
+                        <p><i class="icon-location"></i>Cambridge, ON</p>
+                    </div>
                 </div>
             </div>
 
@@ -147,11 +144,11 @@
                     <h4 class="section-header">Employment</h4>
                     <div class="item">
                         <div class="row">
-                            <div class="small-7 columns">
+                            <div class="small-6 columns">
                                 <h5>University of Guelph<br><span class="position">Undergraduate Teaching Assistant</span></h5>
                             </div>
-                            <div class="small-5 columns text-right">
-                                <h5>Sep 2015 - Present</h5>
+                            <div class="small-6 columns text-right">
+                                <h5>9/2015 - Present</h5>
                             </div>
                         </div>
                         <div class="row column">
@@ -163,11 +160,11 @@
                     </div>
                     <div class="item">
                         <div class="row">
-                            <div class="small-7 columns">
+                            <div class="small-6 columns">
                                 <h5>D2L<br><span class="position">Junior Android Developer</span></h5>
                             </div>
-                            <div class="small-5 columns text-right">
-                                <h5>Apr 2015 - Sep 2015</h5>
+                            <div class="small-6 columns text-right">
+                                <h5>4/2015 - 9/2015</h5>
                             </div>
                         </div>
                         <div class="row column">
@@ -178,11 +175,11 @@
                     </div>
                     <div class="item">
                         <div class="row">
-                            <div class="small-7 columns">
+                            <div class="small-6 columns">
                                 <h5>Fan.si<br><span class="position">Junior Full-Stack Developer</span></h5>
                             </div>
-                            <div class="small-5 columns text-right">
-                                <h5>Apr 2014 - Apr 2015</h5>
+                            <div class="small-6 columns text-right">
+                                <h5>4/2014 - 4/2015</h5>
                             </div>
                         </div>
                         <div class="row column">
@@ -194,11 +191,11 @@
                     </div>
                     <div class="item">
                         <div class="row">
-                            <div class="small-7 columns">
+                            <div class="small-6 columns">
                                 <h5>SAP<br><span class="position">Database Support Engineer</span></h5>
                             </div>
-                            <div class="small-5 columns text-right">
-                                <h5>Apr 2013 - Dec 2013</h5>
+                            <div class="small-6 columns text-right">
+                                <h5>4/2013 - 12/2013</h5>
                             </div>
                         </div>
                         <div class="row column">
@@ -215,11 +212,11 @@
                     <h4 class="section-header">Volunteering</h4>
                     <div class="item">
                         <div class="row">
-                            <div class="small-7 columns">
+                            <div class="small-6 columns">
                                 <h5>CUSEC<br><span class="position">Head Delegate</span></h5>
                             </div>
-                            <div class="small-5 columns text-right">
-                                <h5>Fall 2014 - Current</h5>
+                            <div class="small-6 columns text-right">
+                                <h5>9/2014 - Present</h5>
                             </div>
                         </div>
                         <div class="row column">
@@ -231,11 +228,11 @@
                     </div>
                     <div class="item">
                         <div class="row">
-                            <div class="small-7 columns">
+                            <div class="small-6 columns">
                                 <h5>SOCIS<br><span class="position">Community Liaison</span></h5>
                             </div>
-                            <div class="small-5 columns text-right">
-                                <h5>Apr 2012 - Apr 2015</h5>
+                            <div class="small-6 columns text-right">
+                                <h5>4/2012 - 4/2015</h5>
                             </div>
                         </div>
                         <div class="row column">
@@ -253,11 +250,12 @@
                     <h4 class="section-header">Education</h4>
                     <div class="item">
                         <div class="row">
-                            <div class="small-7 columns">
+                            <div class="small-6 columns">
                                 <h5>University of Guelph<br><span class="position">B.Comp Software Engineering</span></h5>
+                                <p>3.05 in-major GPA</p>
                             </div>
-                            <div class="small-5 columns text-right">
-                                <h5>Sep 2011 - Apr 2016</h5>
+                            <div class="small-6 columns text-right">
+                                <h5>9/2011 - 4/2016</h5>
                             </div>
                         </div>
                     </div>
