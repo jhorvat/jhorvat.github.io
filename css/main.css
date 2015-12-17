@@ -26,9 +26,9 @@ a {
 	transition: all 250ms ease-in-out;
 }
 
-a:hover,
-a:focus,
-a:active {
+a:not(.button):hover,
+a:not(.button):focus,
+a:not(.button):active {
     color: #e74c3c;
 }
 
@@ -85,20 +85,21 @@ a:active {
     margin: 10px;
 }
 
-#intro .info .button {
+.button {
     display: inline-block;
     vertical-align: middle;
     padding: 0.85em 1em;
-    margin: 50px 0 1rem 0;
+    margin: 50px auto 1rem auto;
     font-size: 1rem;
     background: #666;
     color: #FFF;
 }
 
-#intro .info .button:hover,
-#intro .info .button:focus,
-#intro .info .button:active {
+.button:hover,
+.button:focus,
+.button:active {
     background: #e74c3c;
+    color: #FFF;
 }
 
 #intro .info h3 {
