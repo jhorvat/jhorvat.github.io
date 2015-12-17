@@ -9,10 +9,11 @@
 
         <link rel="stylesheet" href="css/foundation.min.css">
         <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/icons.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <div id="intro" class="hide row">
+        <div id="intro" class="row">
             <div class="row">
                 <div class="small-11 small-centered columns text-center">
                     <div class="profile float-center wow fadeIn" data-wow-delay=".75s">
@@ -29,26 +30,31 @@
                         <p>I type on keyboards and sometimes software comes out.</p>
                     </div>
                     <div>
-                        <h3>More About Me</h3>
-                        <a href="http://github.com/jhorvat">Github</a>
-                        <a href="https://medium.com/@jhorvat">Medium</a>
-                        <a href="http://www.linkedin.com/pub/julian-horvat/86/214/95b">LinkedIn</a>
-                        <a id="resumeLink" href="">Resume</a>
-                        <a href="mailto:julian.m.horvat@gmail.com">Email</a>
+                        <h3><a class="button" href="" id="resumeLink">More About Me</a></h3>
+                        <button class="button" id="resumeLink" type="button">More About Me</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="resume" class="row">
-            <div class="large-3 large-offset-1 medium-4 small-12 columns text-center sidebar">
+        <div id="resume" class="hide row">
+            <div class="large-3 large-offset-1 medium-4 small-12 columns sidebar">
                 <div class="profile float-center">
                     <img src="/img/profile.jpg" alt="">
                 </div>
-                <h1 class="name">Julian Horvat</h1>
+                <h1 class="name text-center">Julian Horvat</h1>
+                <div class="profile-info">
+                    <p><a href="mailto:julian.m.horvat@gmail.com"><i class="icon-mail"></i>julian.m.horvat@gmail.com</a></p>
+                    <p><a href="http://jhorvat.github.io"><i class="icon-globe"></i>jhorvat.github.io</a></p>
+                    <p><a href="http://github.com/jhorvat"><i class="icon-github"></i>github.com/jhorvat</a></p>
+                    <p><a href="https://medium.com/@jhorvat"><i class="icon-medium"></i>@jhorvat</a></p>
+                    <p><a href="http://www.linkedin.com/pub/julian-horvat/86/214/95b"><i class="icon-linkedin"></i>LinkedIn</a></p>
+                    <p><i class="icon-phone"></i>(519) 722 6062</p>
+                    <p><i class="icon-location"></i>Cambridge, ON</p>
+                </div>
             </div>
 
-            <div class="large-7 medium-8 small-12 columns end">
+            <div class="large-7 medium-8 small-12 columns end content">
                 <div class="row section">
                     <h4 class="section-header">Projects</h4>
                     <div class="item">

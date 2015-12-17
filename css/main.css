@@ -34,6 +34,7 @@ a:active {
 
 #intro, #resume {
     margin-top: 8vh;
+    margin-bottom: 8vh;
 }
 
 .profile {
@@ -83,6 +84,28 @@ a:active {
     border-right: #666 2px solid;
 }
 
+#resume .sidebar .name {
+    line-height: initial;
+    /*border-bottom: #666 2px solid;*/
+}
+
+#resume .sidebar .profile-info {
+    margin-top: 10px;
+}
+
+#resume .sidebar .profile-info p {
+    margin-bottom: 6px;
+}
+
+#resume .sidebar .profile-info i[class^="icon-"],
+#resume .sidebar .profile-info i[class*=" icon-"] {
+    margin-right: 3px;
+}
+
+#resume .sidebar .social {
+    font-size: 1.5rem;
+}
+
 #resume .section {
     margin: auto;
 }
@@ -116,21 +139,21 @@ a:active {
     font-family: 'Open Sans', sans-serif;
 }
 
-#resume a {
+#resume .content a {
     border-bottom: 1px dotted #888;
 }
 
-#resume a:hover,
-#resume a:focus,
-#resume a:active {
+#resume .content a:hover,
+#resume .content a:focus,
+#resume .content a:active {
     color: #e74c3c;
     border-bottom: 1px dotted #ecf0f1;;
 }
 
-#resume h5 a {
+#resume .content h5 a {
     padding-bottom: 1px;
 }
 
-#resume p {
+#resume .content p {
     margin-bottom: 12px;
 }
