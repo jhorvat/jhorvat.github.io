@@ -1,5 +1,5 @@
 $(document).foundation();
-// new WOW().init();
+new WOW().init();
 
 $("#resumeLink").click(function(e) {
     e.preventDefault();

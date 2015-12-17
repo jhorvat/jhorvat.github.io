@@ -32,23 +32,13 @@ a:active {
     color: #e74c3c;
 }
 
-@media screen and (max-width: 39.9375em) {
-    #resume .sidebar {
-        margin-bottom: 20px;
-    }
-
-    .profile {
-        margin-top: 0;
-    }
-}
-
 #intro, #resume {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
 .profile {
-    width: 50%;
+    width: 30%;
     margin-top: 10px;
     margin-bottom: 15px;
     overflow: hidden;
@@ -58,6 +48,17 @@ a:active {
     -o-border-radius: 50%;
     border-radius: 50%;
     border: #666 8px solid;
+}
+
+@media screen and (max-width: 39.9375em) {
+    #resume .sidebar {
+        margin-bottom: 20px;
+    }
+
+    .profile {
+        margin-top: 0;
+        width: 50%;
+    }
 }
 
 #intro .name {
@@ -101,6 +102,10 @@ a:active {
 
 #resume .sidebar {
     width: 100%;
+}
+
+#resume .sidebar .profile {
+    width: 50%;
 }
 
 #resume .sidebar .name {
